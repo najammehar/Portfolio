@@ -46,7 +46,7 @@ function Projects() {
         />
       
         {/* Projects */}
-        <div className="grid md:grid-cols-2 gap-8 grid-cols-1">
+        <div className="grid md:grid-cols-2 gap-12 grid-cols-1">
           {projects.map((project) => (
             <Project key={project.$id} Project={project} />
           ))}
