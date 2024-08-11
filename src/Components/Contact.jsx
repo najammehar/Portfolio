@@ -141,6 +141,7 @@ function Contact() {
                   value={name}
                   id="name"
                   name='name'
+                  maxLength={50}
                   className={`bg-[#333] text-gray-100 px-4 py-3 w-full rounded-full ${
                     error === 'Name' ? 'border-2 border-red-600' : ''
                   }`}
@@ -159,6 +160,7 @@ function Contact() {
                   value={email}
                   id="email"
                   name='email'
+                  maxLength={100}
                   className={`bg-[#333] text-gray-100 px-4 py-3 w-full rounded-full ${
                     error === 'Email' ? 'border-2 border-red-600' : ''
                   }`}
@@ -178,6 +180,7 @@ function Contact() {
                 value={subject}
                 id="subject"
                 name='subject'
+                maxLength={100}
                 className={`bg-[#333] text-gray-100 px-4 py-3 w-full rounded-full ${
                   error === 'Subject' ? 'border-2 border-red-600' : ''
                 }`}
@@ -195,6 +198,7 @@ function Contact() {
                 id="message"
                 value={message}
                 name='message'
+                maxLength={2000}
                 className={`bg-[#333] text-gray-100 px-4 py-3 w-full h-40 md:h-full rounded-2xl ${
                   error === 'Message' ? 'border-2 border-red-600' : ''
                 }`}
