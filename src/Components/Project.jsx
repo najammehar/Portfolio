@@ -3,8 +3,14 @@ import React from 'react';
 function Project({ Project }) {
   return (
     <div className="flex flex-col h-full gap-4">
-    <img className="w-full rounded-md" src={Project.Image} alt={Project.Project_Name} />
-    <div className="flex flex-col flex-grow">
+<div className="w-full relative pb-[56.25%] overflow-hidden rounded-md">
+        <img 
+          className="absolute top-0 left-0 w-full h-full object-cover object-center" 
+          src={Project.Image} 
+          alt={Project.Project_Name} 
+        />
+      </div>    
+      <div className="flex flex-col flex-grow">
       <div className="flex items-center justify-between mb-4">
         <h2 className="font-bold text-2xl text-primary-100">{Project.Project_Name}</h2>
         <p className="text-xs font-bold py-1 px-2 bg-white opacity-60 text-gray-700 rounded-full">

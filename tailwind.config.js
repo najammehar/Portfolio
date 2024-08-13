@@ -9,6 +9,7 @@ export default {
       animation: { 
          blob: 'blob 4s infinite',
          float: 'float 4s ease-in-out infinite',
+         'fill': 'fill 2s ease-in-out forwards',
       },
       keyframes: {
         blob: {
@@ -31,6 +32,10 @@ export default {
           float: {
             '0%, 100%': { letterSpacing: '0.05em', transform: 'translateY(0) translateX(0) skew(0deg)' },
             '50%': { letterSpacing: '0.12em', transform: 'translateY(0) translateX(0) skew(0deg)' },
+          },
+          fill: {
+            '0%': { strokeDashoffset: '251.2' },
+            '100%': { strokeDashoffset: 'var(--final-value)' },
           },
         },
       fontFamily: {
