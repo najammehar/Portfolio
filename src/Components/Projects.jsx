@@ -10,6 +10,7 @@ function Projects() {
   const [projects, setProjects] = useState([]);
   const [offset, setOffset] = useState(0);
   const [showSeeMore, setShowSeeMore] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchProjects(2, 0);
@@ -17,6 +18,7 @@ function Projects() {
 
   async function fetchProjects(limit, offset) {
     try {
+      setLoading(true);
       const newProjects = await ProjectService.getProjects(limit, offset);
 
       // Check if there are any duplicate projects
@@ -33,6 +35,8 @@ function Projects() {
     } catch (error) {
       console.log('Appwrite service :: getProjects :: error', error);
       throw error;
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -50,7 +54,7 @@ function Projects() {
         {/* Projects */}
         <div className="grid md:grid-cols-2 gap-12 grid-cols-1">
           {projects.map((project) => (
-            <Project key={project.$id} Project={project} />
+            <Project key={project.$id} Project={project} loading = {loading}/>
           ))}
         </div>
       {showSeeMore && (

@@ -1,7 +1,31 @@
 import React from 'react';
 
-function Project({ Project }) {
+function Project({ Project, loading }) {
+
+  if (loading) {
+    return (
+      <div className="flex flex-col h-full gap-4">
+      <div className="w-full relative pb-[56.25%] overflow-hidden rounded-md animate-pulse">
+        <div className="absolute top-0 left-0 w-full h-full bg-grey-45"></div>
+      </div>
+      <div className="flex flex-col flex-grow">
+        <div className="flex items-center justify-between mb-4">
+          <div className="w-1/2 h-6 bg-grey-45 rounded-full animate-pulse"></div>
+          <div className="w-1/5 h-6 bg-grey-45 rounded-full animate-pulse"></div>
+        </div>
+        <div className="w-full h-3 bg-grey-45 rounded-full animate-pulse mb-1"></div>
+        <div className="w-full h-3 bg-grey-45 rounded-full animate-pulse mb-1"></div>
+        <div className="w-1/2 h-3 bg-grey-45 rounded-full animate-pulse mb-1"></div>
+        <div className="flex items-center justify-between gap-8 mt-4">
+          <div className="w-1/2 h-8 bg-grey-45 rounded-full animate-pulse"></div>
+          <div className="w-1/2 h-8 bg-grey-45 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+    );
+  }
   return (
+    <>
     <div className="flex flex-col h-full gap-4">
 <div className="w-full relative pb-[56.25%] overflow-hidden rounded-md">
         <img 
@@ -42,7 +66,7 @@ function Project({ Project }) {
       </div>
     </div>
   </div>
-    
+  </>
   );
 }
 
