@@ -31,19 +31,7 @@ export class Project {
             throw error;
         }
     }
-    async getImageURL(fileID){
-        try {
-            const response = this.storage.getFilePreview(
-                Config.appwriteBucketID,
-                fileID
-            )
-            return response;
-        } catch (error) {
-            console.log("Appwrite service :: getImageURL :: error", error);
-            throw error;
-            
-        }
-    }
+
 }
 
 const ProjectService = new Project();
