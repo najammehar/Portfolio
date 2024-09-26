@@ -13,7 +13,7 @@ function Projects() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchProjects(2, 0);
+    fetchProjects(4, 0);
   }, []);
 
   async function fetchProjects(limit, offset) {
@@ -59,7 +59,7 @@ function Projects() {
         </div>
       {showSeeMore && (
       <button
-              onClick={() => fetchProjects(2, offset)}
+              onClick={() => fetchProjects(4, offset)}
               className="w-fit mx-auto block border relative border-primary-100 text-gray-100 font-semibold pl-10 hover:pl-4 pr-4 hover:pr-10 py-1 duration-300 group rounded-full mt-8 "
             >
               <div className="w-8 h-8 p-2 absolute left-0 group-hover:left-[80%] duration-300 bg-primary-100 rounded-full top-0">

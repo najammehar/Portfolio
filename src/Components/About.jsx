@@ -2,14 +2,19 @@ import React from "react";
 import profile from "../assets/profile.png";
 import { AiOutlineDownload } from "react-icons/ai";
 import Heading from "./Heading";
-import Resume from "../assets/Resume.pdf";
+import resume from "../assets/resume.pdf";
 
 function About() {
   return (
     <section className="text-gray-100 bg-[#242526]">
       <div className="max-w-7xl px-4 mx-auto py-8">
         {/* Header */}
-        <Heading bgText={"About"} text1={"About"} text2={"Me"} bgColor={"text-[#fefefe0a]"} />
+        <Heading
+          bgText={"About"}
+          text1={"About"}
+          text2={"Me"}
+          bgColor={"text-[#fefefe0a]"}
+        />
 
         {/* Body */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 px-4 md:px-0">
@@ -38,12 +43,15 @@ function About() {
                 Introduction
               </h2>
               <p className="text-sm lg:text-lg text-gray-400 mt-2">
-                I am Najam ul Hassan, a skilled frontend developer excelling in
-                React, currently in my 5th semester of Software Engineering at
-                COMSATS University Lahore. I craft dynamic, user-friendly
-                applications and specialize in fullstack web development with
-                Appwrite backend services. I am committed to advancing my
-                expertise and becoming a proficient MERN stack developer.
+                I am Najam ul Hassan, a fullstack web developer excelling in
+                frontend development with React and skilled in backend
+                technologies. Currently in my 5th semester of Software
+                Engineering at COMSATS University Lahore, I craft dynamic,
+                user-friendly applications. While I specialize in frontend, I
+                have a solid understanding of backend development with Appwrite
+                and other technologies, though I have limited hands-on
+                experience. I am committed to advancing my skills and becoming a
+                proficient MERN stack developer.
               </p>
             </div>
             <div>
@@ -69,16 +77,16 @@ function About() {
                 </div>
               </div>
             </div>
-            <a 
-            href={Resume} 
-            download="Najam ul Hassan Resume"
-            className="w-fit border relative border-primary-100 text-gray-100 font-semibold pl-16 hover:pl-4 pr-4 hover:pr-16 py-3 duration-300 flex gap-2 items-center group rounded-full"
-          >
-            <div className='w-12 h-12 p-2 absolute left-0 group-hover:left-[68%] duration-300 bg-primary-100 rounded-full top-0'>
-              <AiOutlineDownload className="h-full w-full text-white" />
-            </div>
-            Resume
-          </a>
+            <a
+              href={resume}
+              download="Najam ul Hassan Resume"
+              className="w-fit border relative border-primary-100 text-gray-100 font-semibold pl-16 hover:pl-4 pr-4 hover:pr-16 py-3 duration-300 flex gap-2 items-center group rounded-full"
+            >
+              <div className="w-12 h-12 p-2 absolute left-0 group-hover:left-[68%] duration-300 bg-primary-100 rounded-full top-0">
+                <AiOutlineDownload className="h-full w-full text-white" />
+              </div>
+              Resume
+            </a>
           </div>
         </div>
       </div>

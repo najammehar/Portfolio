@@ -10,12 +10,12 @@ function Skills() {
     { skill: 'TAILWIND', percentage: 80 },
     { skill: 'JQUERY', percentage: 55 },
     { skill: 'BOOTSTRAP', percentage: 55 },
-    { skill: 'APPWRITE', percentage: 75 },
-    { skill: 'NODE JS', percentage: 70 },
-    { skill: 'EXPRESS', percentage: 50 },
-    { skill: 'SQL', percentage: 80 },
+    { skill: 'APPWRITE', percentage: 70 },
+    { skill: 'NODE JS', percentage: 75 },
+    { skill: 'EXPRESS', percentage: 70 },
+    { skill: 'SQL', percentage: 75 },
     { skill: 'POSTGRESQL', percentage: 70 },
-    { skill: 'MONGODB', percentage: 50 },
+    { skill: 'MONGODB', percentage: 70 },
   ];
 
   const skillsRef = useRef(null);

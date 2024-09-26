@@ -17,7 +17,7 @@ function Hero({ contactRef }) {
               Najam Ul Hassan
             </h1>
             <h1 className="font-semibold text-2xl lg:text-3xl">
-              Software Engineer | Front-End Web developer
+              Web developer | Software Engineer
             </h1>
             <p className="text-gray-400">
               Turning complexity into clarity, I design intuitive user
