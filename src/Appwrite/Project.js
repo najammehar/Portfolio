@@ -16,7 +16,7 @@ export class Project {
     async getProjects(limit, offset){
         try {
             const queries = [
-                Query.orderDesc("$createdAt"),
+                Query.orderAsc("$createdAt"),
                 Query.limit(limit),
                 Query.offset(offset)
             ]
