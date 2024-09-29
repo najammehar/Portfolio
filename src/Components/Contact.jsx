@@ -118,7 +118,7 @@ function Contact() {
     <a href="https://www.linkedin.com/in/najam-ul-hassan-65b92a250/" target="_blank" rel="noreferrer" className='w-10 h-10 hover:bg-[#0077b5] rounded-full flex items-center justify-center hover:scale-110 duration-300 hover:-translate-y-1'>
     <FaLinkedinIn className='text-white w-6 h-6' />
     </a>
-    <a href="https://www.github.com/nuh126" target="_blank" rel="noreferrer" className='w-10 h-10 hover:bg-[#333] rounded-full flex items-center justify-center hover:scale-110 duration-300 hover:-translate-y-1'>
+    <a href="https://www.github.com/najammehar" target="_blank" rel="noreferrer" className='w-10 h-10 hover:bg-[#333] rounded-full flex items-center justify-center hover:scale-110 duration-300 hover:-translate-y-1'>
     <FaGithub className='text-white w-6 h-6' />
     </a>
     </div>
