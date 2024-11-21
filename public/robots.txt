@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://najamulhassan.vercel.app/sitemap.xml
+Sitemap: https://najamulhassan.tech/sitemap.xml
