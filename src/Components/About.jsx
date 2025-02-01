@@ -43,15 +43,14 @@ function About() {
                 Introduction
               </h2>
               <p className="text-sm lg:text-lg text-gray-400 mt-2">
-                I am Najam ul Hassan, a fullstack web developer excelling in
-                frontend development with React and skilled in backend
-                technologies. Currently in my 5th semester of Software
-                Engineering at COMSATS University Lahore, I craft dynamic,
-                user-friendly applications. While I specialize in frontend, I
-                have a solid understanding of backend development with Appwrite
-                and other technologies, though I have limited hands-on
-                experience. I am committed to advancing my skills and becoming a
-                proficient MERN stack developer.
+                I am Najam ul Hassan, a MERN stack developer with 1 year of
+                experience in building dynamic and user-friendly applications. I
+                specialize in frontend development with React and have hands-on
+                experience in backend technologies, including Node.js, Express,
+                MongoDB, and Appwrite. Additionally, I have expertise in
+                Next.js, Git/GitHub, and database management. Passionate about
+                crafting efficient and scalable solutions, I continuously
+                enhance my skills to stay at the forefront of web development.
               </p>
             </div>
             <div>

@@ -104,7 +104,7 @@ function Contact() {
     <FaPhoneAlt className='text-primary-100 w-6 h-6' />
     <div>
     <h2 className='text-gray-400'>CALL ME</h2>
-    <p className="font-bold text-sm">+92 318 4616288</p>
+    <p className="font-bold text-sm">+92 329 6127210</p>
     </div>
     </div>
     </div>
